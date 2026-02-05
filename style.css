@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background: #f2f2f2;
+  color: #111;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px;
+  background: #1a1a1a;
+  color: #fff;
+}
+.navbar .logo {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(to right, #4b6cb7, #182848);
+  color: #fff;
+}
+.hero h1 { font-size: 2rem; margin-bottom: 10px; }
+.hero p { margin-bottom: 20px; }
+.btn {
+  background: #ff6b6b;
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 5px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* SERVICES */
+.services { padding: 40px 20px; text-align: center; }
+.service-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* HOW IT WORKS */
+.how { padding: 40px 20px; text-align: center; }
+.steps { display: flex; flex-direction: column; gap: 20px; }
+.step { background: #fff; padding: 20px; border-radius: 10px; }
+
+/* AUTH */
+.auth-section {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 40px 20px;
+}
+.auth-container {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+.auth-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.auth-container input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.auth-container button {
+  padding: 10px;
+  background: #4b6cb7;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #1a1a1a;
+  color: #fff;
+}
+
+/* RESPONSIVE */
+@media (min-width: 600px) {
+  .service-cards, .steps { flex-direction: row; justify-content: center; }
+  .auth-section { flex-direction: row; justify-content: space-around; }
+}
